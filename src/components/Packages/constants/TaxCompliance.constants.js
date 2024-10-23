@@ -18,7 +18,7 @@ export const TaxCompliance = {
     <div>
         When you just need a tax return prepared.
         <br />
-        <i>Billed monthly for 12 months</i>
+        <i>Billed annually at tax time</i>
     </div>,
     listHeader: "Includes",
     listElements: [
