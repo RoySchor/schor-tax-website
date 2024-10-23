@@ -35,6 +35,7 @@ const Navbar = () => {
           className="dropdown"
           onMouseEnter={() => setDropdownOpen(true)}
           onMouseLeave={() => setDropdownOpen(false)}
+          onClick={() => setDropdownOpen(!dropdownOpen)}
         >
           <button
             className={`navbarLink dropbtn`}
