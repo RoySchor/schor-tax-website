@@ -1,0 +1,90 @@
+.packagesSection {
+    padding: 3em 4em;
+    background: linear-gradient(
+        to bottom,
+        #EAEAEE,
+        #a0cbc4,
+        #a0cbc4,
+        #a0cbc4
+    );
+    text-align: center;
+}
+
+.packagesSectionHeader {
+    margin-bottom: 2em;
+}
+
+.packagesSectionTitle {
+    font-size: 3.5em;
+    margin-bottom: 0.25em;
+}
+
+.packagesSectionSubheader {
+    font-size: 2.25em;
+    font-weight: 300;
+    margin: 0 1em;
+    margin-bottom: 1.5em;
+}
+
+.packagesSectionDescription {
+    font-size: 1.3em;
+    font-weight: 250;
+    margin: 0 1.5em;
+    line-height: 1.3;
+    text-align: left;
+}
+
+.packagesBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blueDivider {
+    color: #8EB6DB;
+    background-color: #8EB6DB;
+    border-color: #8EB6DB;
+    margin: 4em 0;
+}
+
+.packagesSectionContent {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.servicePackageRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicePackageColumn {
+    flex: 1;
+    padding: 1em 0;
+    text-align: left;
+}
+
+.servicePackageTitle {
+    font-size: 2.3em;
+    text-decoration: underline;
+    margin-bottom: 0.5em;
+}
+
+.packagesSectionubtitle {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+@media (max-width: 768px) {
+    .servicePackageRow {
+        flex-direction: column;
+    }
+
+    .packagesSectionDescription {
+        font-size: 1.1em;
+    }
+
+    .packagesBody {
+        margin-left: 0;
+    }
+}

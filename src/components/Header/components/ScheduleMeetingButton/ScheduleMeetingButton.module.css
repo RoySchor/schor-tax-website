@@ -1,0 +1,14 @@
+.scheduleButton {
+  background-color: var(--primaryButtonBackgroundColor);
+  color: black;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+
+.scheduleButton:hover {
+  opacity: 80%;
+}

@@ -1,0 +1,61 @@
+.infoPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 6.6vmax;
+    padding-top: 4vh;
+}
+
+.infoColumn {
+    flex: 1;
+    max-width: 80%;
+    padding: 2.5em;
+}
+
+.infoImage {
+    width: 65%;
+    height: 65%;
+    margin-bottom: 1em;
+}
+
+.infoTitle {
+    font-size: 1.5em;
+    color: #1470AF;
+    margin-bottom: 0.5em;
+}
+
+.infoDescription {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5em;
+}
+
+.infoDescription strong {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .infoPage {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .infoColumn {
+        max-width: 100%;
+        padding-bottom: 0;
+    }
+
+    .infoImage {
+        width: 30%;
+        height: 30%;
+    }
+
+    .infoTitle {
+        font-size: 1.2em;
+    }
+
+    .infoDescription {
+        font-size: 0.9em;
+    }
+}

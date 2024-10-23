@@ -1,0 +1,33 @@
+.footer {
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 8em;
+    align-items: center;
+}
+
+.footerText {
+    font-size: 1.3em;
+}
+
+.footerLeft {
+    text-align: left;
+}
+
+.footerRight {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        height: 15vh;
+        gap: 1em;
+        padding: 0 2.5em;
+    }
+
+    .footerText {
+        font-size: 0.9em;
+    }
+}

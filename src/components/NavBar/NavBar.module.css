@@ -1,0 +1,148 @@
+:global(:root) {
+    --darkAccent-hsl: 204.39, 79.49%, 38.24%;
+    --lightAccent-hsl: 240, 70.53%, 92.55%;
+    --white-hsl: 0, 0%, 100%;
+}
+
+:global(#services),
+:global(#packages) {
+    scroll-margin-top: 138px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    height: 80px;
+    background: linear-gradient(
+        to bottom,
+        hsla(var(--darkAccent-hsl), 1),
+        hsla(var(--lightAccent-hsl), 1)
+    );
+    backdrop-filter: blur(7px);
+    display: flex;
+    align-items: center;
+    padding: 5vw 7vw;
+    justify-content: space-between;
+    z-index: 1;
+    transition: padding 0.6s ease-in-out;
+}
+
+.navbar.shrink {
+    background: linear-gradient(
+        to bottom,
+        hsla(var(--darkAccent-hsl), 1),
+        hsla(var(--lightAccent-hsl), 0.6)
+    );
+    padding: 1.8vw 5vw;
+}
+
+.navbarTitle {
+    color: hsla(var(--white-hsl), 1);
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.navbarLogo {
+    height: 250px;
+    width: auto;
+    transition: 0.6s ease-in-out;
+}
+
+.navbarLogo.shrink {
+    height: 150px;
+}
+
+.navbarLinks {
+    display: flex;
+    gap: 3em;
+}
+
+.navbarLink {
+    color: hsla(var(--white-hsl), 1);
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.navbarLink:hover {
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdownContent {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: none;
+    border-radius: .75em;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0.5em 0;
+    z-index: 1;
+}
+
+.dropdownContent.shrink {
+    background: linear-gradient(
+        to bottom,
+        hsla(var(--darkAccent-hsl), 0.5),
+        hsla(var(--lightAccent-hsl), 0.5)
+    );
+}
+
+.dropdownContent a {
+    color: black;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    font-size: 0.91em;
+}
+
+.dropdownContent a:hover {
+    background-color: none;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 3vw 5vw;
+    }
+
+    .navbar.shrink {
+        background: linear-gradient(
+            to bottom,
+            hsla(var(--darkAccent-hsl), 1),
+            hsla(var(--lightAccent-hsl), 0.6)
+        );
+        padding: 1.4vw 4vw;
+    }
+
+    .navbarTitle {
+        font-size: 0.9em;
+    }
+
+    .navbarLogo {
+        height: 150px;
+    }
+
+    .navbarLogo.shrink {
+        height: 100px;
+    }
+
+    .navbarLinks {
+        gap: 0.5em;
+    }
+
+    .navbarLink {
+        font-size: 0.9em;
+    }
+}
