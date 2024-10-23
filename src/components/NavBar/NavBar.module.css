@@ -145,4 +145,8 @@
     .navbarLink {
         font-size: 0.9em;
     }
+
+    .dropdownContent {
+        left: -3.8em;
+    }
 }

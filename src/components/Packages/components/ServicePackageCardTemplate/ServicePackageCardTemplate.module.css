@@ -70,10 +70,11 @@
 
   .description {
     padding-top: 0em;
-    padding-bottom: 1.5em;
+    padding-bottom: 1em;
   }
 
   .listElement {
     font-size: 1em;
+    margin-bottom: 0.75em;
   }
 }
